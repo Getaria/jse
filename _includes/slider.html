@@ -1,0 +1,13 @@
+<div id="slideshow" class="fullwidthbanner-container main-slider hidden-xs">
+  <div class="fullwidthbanner">
+    <ul>
+      {% assign slides = site.slides | where: "activo", true %}
+      {% for slide in slides %}
+      <li data-transition="fade" data-masterspeed="800">
+        <img data-bgposition="center top" src="/assets/images/slider/{{ slide.image }}" title="{{ slide.title }}" alt="{{ slide.title }}"/>
+      </li>
+      {% endfor %}
+    </ul>
+    <div class="tp-bannertimer tp-bottom"></div>
+  </div>
+</div>

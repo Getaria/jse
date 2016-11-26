@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="{{ page.language }}">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ site.title}}</title>
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"
+			      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+			      crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"
+            integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+            crossorigin="anonymous"></script>
+    <!-- Slider Revolution -->
+    <script src="/assets/js/slider-revolution/src/js/jquery.themepunch.revolution.min.js"></script>
+    <script src="/assets/js/slider-revolution/src/js/jquery.themepunch.plugins.min.js"></script>
+    <link rel="stylesheet" href="/assets/js/slider-revolution/src/css/settings.css">
+    <script src="/assets/js/slider-init.js"></script>
+
+    <link rel="stylesheet" href="/assets/css/screen.css" media="screen,projection">
+    <link rel="stylesheet" href="/assets/css/print.css" media="print">
+    <link rel="stylesheet" href="/assets/css/zocial-font/zocial.css" media="all">
+    <link type="text/css"
+          rel="stylesheet"
+          href="http://fonts.googleapis.com/css?family=Alegreya:regular&amp;subset=latin"
+          media="all">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+  </head>
+  <body>
+    {% include header.html %}
+    {% include slider.html %}
+    {{ content }}
+  </body>
+</html>

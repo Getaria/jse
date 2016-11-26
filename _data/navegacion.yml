@@ -1,0 +1,67 @@
+en:
+  inicio:
+    name: "Home"
+    url: "/en/"
+  jse:
+    name: "J.S.Elkano"
+    url: "#"
+  historia:
+    name: "History"
+    url: "#"
+  testimonios:
+    name: "Testimonials"
+    url: "#"
+  conmemoraciones:
+    name: "Commemorations"
+    url: "#"
+
+es:
+  inicio:
+    name: "Inicio"
+    url: "/es/"
+  jse:
+    name: "J.S.Elkano"
+    url: "#"
+  historia:
+    name: "Historia"
+    url: "#"
+  testimonios:
+    name: "Testimonios"
+    url: "#"
+  conmemoraciones:
+    name: "conmemoraciones"
+    url: "#"
+
+eu:
+  inicio:
+    name: "Hasiera"
+    url: "/eu/"
+  jse:
+    name: "J.S.Elkano"
+    url: "#"
+  historia:
+    name: "Historia"
+    url: "#"
+  testimonios:
+    name: "Testuinguru"
+    url: "#"
+    conmemoraciones:
+    name: "Ospakizunak"
+    url: "#"
+
+fr:
+  inicio:
+    name: "Accueil"
+    url: "/fr/"
+  jse:
+    name: "J.S.Elkano"
+    url: "#"
+  historia:
+    name: "Histoire"
+    url: "#"
+  testimonios:
+    name: "Témoignages"
+    url: "#"
+  conmemoraciones:
+    name: "Commémorations"
+    url: "#"

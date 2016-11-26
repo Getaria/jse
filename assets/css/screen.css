@@ -1,0 +1,272 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 9, ../../scss/screen.scss */
+body {
+  background: rgba(255, 255, 255, 0) url(../../assets/images/foto_fondo.jpg) repeat top left;
+  color: #777777;
+  font-size: 21px;
+  line-height: 1.5em;
+}
+
+/**
+ * Site header
+ * */
+/* line 19, ../../scss/screen.scss */
+.site-header {
+  position: relative;
+  background-color: #29286a;
+}
+/* line 22, ../../scss/screen.scss */
+.site-header a {
+  color: #eeeeee;
+}
+/* line 25, ../../scss/screen.scss */
+.site-header .glyphicon {
+  color: #eeeeee;
+}
+/* line 28, ../../scss/screen.scss */
+.site-header .header-links {
+  margin-top: 0em;
+  padding-top: 1.2em;
+  padding-bottom: 0.75em;
+  margin-bottom: 0em;
+}
+/* line 30, ../../scss/screen.scss */
+.site-header .header-links a.active {
+  color: #777777;
+}
+/* line 33, ../../scss/screen.scss */
+.site-header .header-links a {
+  color: #cccccc;
+}
+/* line 37, ../../scss/screen.scss */
+.site-header nav[role=navigation] {
+  position: relative;
+  margin-bottom: 0;
+  text-shadow: inset rgba(0, 0, 0, 0.5) -1px 0, rgba(0, 0, 0, 0.3) 0 -1px, rgba(255, 255, 255, 0.5) 0 1px, rgba(0, 0, 0, 0.3) -1px -2px;
+  -moz-border-radius: 0;
+  -webkit-border-radius: 0;
+  border-radius: 0;
+  z-index: 20;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+}
+/* line 45, ../../scss/screen.scss */
+.site-header nav[role=navigation] a {
+  color: 29286a;
+}
+/* line 47, ../../scss/screen.scss */
+.site-header nav[role=navigation] a:hover {
+  color: #190f40;
+}
+/* line 52, ../../scss/screen.scss */
+.site-header nav[role=navigation] a.navbar-brand img {
+  position: absolute;
+  margin-top: -4em;
+  margin-left: 0.5em;
+}
+/* line 59, ../../scss/screen.scss */
+.site-header nav[role=navigation] .navbar-collapse ul {
+  font-family: "Alegreya", serif;
+}
+/* line 61, ../../scss/screen.scss */
+.site-header nav[role=navigation] .navbar-collapse ul li.leaf {
+  list-style-image: none;
+  list-style-type: none;
+}
+/* line 66, ../../scss/screen.scss */
+.site-header nav[role=navigation] .navbar-collapse ul li ul {
+  font-size: 14px;
+}
+
+/**
+ * Slider
+ */
+/* line 78, ../../scss/screen.scss */
+#slideshow {
+  position: relative;
+  z-index: 10;
+}
+
+/**
+ * Main content
+ */
+/* line 86, ../../scss/screen.scss */
+main {
+  margin-top: 3em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 3em;
+  font-family: Alegreya, serif;
+}
+/* line 90, ../../scss/screen.scss */
+main a {
+  color: #777777;
+}
+/* line 95, ../../scss/screen.scss */
+main article p {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 0.75em;
+}
+/* line 98, ../../scss/screen.scss */
+main article img {
+  vertical-align: middle;
+}
+/* line 103, ../../scss/screen.scss */
+main .marco-foto img {
+  padding: 1em;
+  background: transparent url(../../assets/images/marcofotos.png) no-repeat center center;
+  background-size: contain;
+}
+/* line 109, ../../scss/screen.scss */
+main blockquote {
+  text-align: center;
+  font-style: italic;
+}
+
+/**
+ * Site footer
+ */
+/* line 118, ../../scss/screen.scss */
+.site-footer {
+  color: #eeeeee;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+/* line 121, ../../scss/screen.scss */
+.site-footer .row {
+  background-color: #29286a;
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+  margin-bottom: 0em;
+}
+/* line 124, ../../scss/screen.scss */
+.site-footer .row:last-child {
+  margin-top: 0em;
+  padding-top: 1.5em;
+  padding-bottom: 0em;
+  margin-bottom: 0em;
+  font-size: 0.75em;
+  line-height: 2em;
+}
+/* line 130, ../../scss/screen.scss */
+.site-footer .redes-sociales {
+  background-color: transparent;
+  border-bottom: solid 0.3em #29286a;
+  margin-bottom: 0.5em;
+}
+/* line 135, ../../scss/screen.scss */
+.site-footer .redes-sociales ul {
+  background-color: white;
+  margin-bottom: -0.972222222em;
+}
+/* line 141, ../../scss/screen.scss */
+.site-footer .footer-heading {
+  font-family: serif;
+  color: #eeeeee;
+  margin-bottom: 0.5em;
+}
+/* line 151, ../../scss/screen.scss */
+.site-footer #udala h1 a {
+  color: #ccc;
+}
+/* line 152, ../../scss/screen.scss */
+.site-footer #udala h1:before {
+  content: url(../../assets/images/logo-getariako-udala.png) " ";
+  vertical-align: top;
+}
+/* line 158, ../../scss/screen.scss */
+.site-footer #turismo h1 a {
+  color: #ccc;
+}
+/* line 159, ../../scss/screen.scss */
+.site-footer #turismo h1:before {
+  content: url(../../assets/images/logo-getaria-turismo.png) " ";
+  vertical-align: top;
+}
+/* line 164, ../../scss/screen.scss */
+.site-footer .footer-menu a {
+  color: #eeeeee;
+}
+
+/**
+ * Portada
+ */
+/* line 172, ../../scss/screen.scss */
+.view-portada header h1 {
+  min-height: 2.5em;
+}
+
+/* line 176, ../../scss/screen.scss */
+.view-portada .row {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 2.25em;
+  margin-bottom: 0em;
+}
+
+/* line 180, ../../scss/screen.scss */
+.view-portada .con-padding {
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+/* line 185, ../../scss/screen.scss */
+ul.bibliografia {
+  list-style: outside none none;
+}
+/* line 187, ../../scss/screen.scss */
+ul.bibliografia li:before {
+  content: url("../images/pluma.png") " ";
+  vertical-align: top;
+}
+
+/**
+ * Centenario
+ */
+/* line 196, ../../scss/screen.scss */
+.isotope-item {
+  margin-top: 0em;
+  padding-top: 0em;
+  padding-bottom: 0em;
+  margin-bottom: 1.5em;
+}
+
+/* line 200, ../../scss/screen.scss */
+[class^=translation] {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  /* line 205, ../../scss/screen.scss */
+  nav[role=navigation] {
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  /* line 208, ../../scss/screen.scss */
+  nav[role=navigation] ul {
+    font-size: 0.875em;
+    line-height: 1.71429em;
+  }
+  /* line 210, ../../scss/screen.scss */
+  nav[role=navigation] ul li {
+    padding-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  /* line 221, ../../scss/screen.scss */
+  nav[role=navigation] ul {
+    font-size: 1em;
+    line-height: 1.5em;
+  }
+
+  /* line 228, ../../scss/screen.scss */
+  .col-md-4 .marco-foto img {
+    padding: 0.5em;
+  }
+}

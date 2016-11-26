@@ -1,0 +1,21 @@
+{
+  "name": "jse",
+  "authors": [
+    "Iñaki García Blasco <inaki@txorua.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "slider-revolution": "^4.3.7"
+  }
+}

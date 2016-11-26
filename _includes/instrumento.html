@@ -1,0 +1,18 @@
+<article>
+  <header>
+    <h1>{{ instrumento.title }}</h1>
+  </header>
+
+  <div class="row">
+    <div class="col-xs-4 pull-right">
+      <img src="/assets/images/instrumentos/{{ instrumento.image }}"
+           alt="{{ instrumento.title }}"
+           title="{{ instrumento.title }}"
+           class="img-responsive center-block"
+           typeof="foaf:Image">
+    </div>
+    <div class="col-xs-8">
+      {{ instrumento.content }}
+    </div>
+  </div>
+</article>

@@ -1,0 +1,17 @@
+<header class="site-header" role="banner">
+
+  <div class="container">
+    <div class="text-right">
+      <ul class="header-links list-inline list-unstyled h4">
+        <li><span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="/{{ page.language }}/contact">contact</a></li>
+        <li><i class="glyphicon glyphicon-flag"></i></li>
+        {% for language in site.languages %}
+        <li{% if language == page.language %} class="active"{% endif %}>
+          <a href="/{{ language }}"{% if language == page.language %} class="active"{% endif %}>{{ language }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+  {% include navegacion.html language=page.language %}
+</header>

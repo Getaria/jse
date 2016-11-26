@@ -1,0 +1,35 @@
+---
+layout: default
+---
+
+<div class="row">
+  {% if page.navegacion != nil %}
+  <div class="breadcrumb">
+    <a href="/{{ page.language }}">{{ site.data.navegacion[page.language]["inicio"].name }} &raquo; {{ site.data.navegacion[page.language][page.navegacion].name | camelcase }} </a>
+  </div>
+  {% endif %}
+  <article>
+    <header>
+      <h1 class="page-header">{{ page.title }}</h1>
+    </header>
+    {% if page.image-banner != nil %}
+    <img typeof="foaf:Image"
+         src="/assets/images/pages/{{ page.image-banner }}">
+    {% endif %}
+    {% if page.image != nil %}
+    <div class="col-xs-4 col-xs-offset-0 col-sm-3 col-sm-offset-0">
+      <img src="/assets/images/pages/{{ page.image }}" class="img-responsive fondo-marron pull-right" alt="{{ page.title }}">
+    </div>
+  {% endif %}
+  {{ content }}
+  {% if page.archivos != nil %}
+  {% for archivo in page.archivos %}
+  <span class="file">
+    <i class="fa fa-file-pdf-o" aria-hidden="true"></i>
+    <a href="/assets/archivos/{{ archivo.archivo }}"
+       title="{{ archivo.titulo }}">{{ archivo.titulo }}</a>
+      </span>
+  {% endfor %}
+  {% endif %}
+</article>
+</div>

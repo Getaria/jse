@@ -25,7 +25,7 @@
     <link rel="stylesheet" href="{{ "/assets/css/screen.css" | prepend: site.baseurl | prepend: site.url }}" media="screen,projection">
     <link rel="stylesheet" href="{{ "/assets/css/print.css" | prepend: site.baseurl | prepend: site.url }}" media="print">
     <link rel="stylesheet" href="{{ "/assets/css/zocial-font/zocial.css" | prepend: site.baseurl | prepend: site.url }}" media="all">
-    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Alegreya" rel="stylesheet">
     <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
           rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
@@ -35,5 +35,6 @@
     {% include header.html %}
     {% include slider.html %}
     {{ content }}
+    {% include footer.html %}
   </body>
 </html>

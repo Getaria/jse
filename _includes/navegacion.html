@@ -8,9 +8,9 @@
       <span class="icon-bar"></span>
     </button>
 
-    <a class="name navbar-brand" href="/{{ page.language }}" title="Home">
+    <a class="name navbar-brand" href="{{ "/" | append: page.language | prepend: site.baseurl | prepend: url }}" title="Home">
       <span class="visible-xs">{{ site.title }}</span>
-      <img src="/assets/images/{{ site.logo }}" alt="{{ site.title }}" class="img-responsive img-circle hidden-xs">
+      <img src="{{ "/assets/images/" | append: site.logo | prepend: site.baseurl | prepend: site.url }}" alt="{{ site.title }}" class="img-responsive img-circle hidden-xs">
     </a>
   </div>
 

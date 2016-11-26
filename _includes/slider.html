@@ -4,7 +4,7 @@
       {% assign slides = site.slides | where: "activo", true %}
       {% for slide in slides %}
       <li data-transition="fade" data-masterspeed="800">
-        <img data-bgposition="center top" src="/assets/images/slider/{{ slide.image }}" title="{{ slide.title }}" alt="{{ slide.title }}"/>
+        <img data-bgposition="center top" src="{{ "/assets/images/slider/" | append: slide.image | prepend: site.baseurl | prepend: site.url }}" title="{{ slide.title }}" alt="{{ slide.title }}"/>
       </li>
       {% endfor %}
     </ul>

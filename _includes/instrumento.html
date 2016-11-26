@@ -5,7 +5,7 @@
 
   <div class="row">
     <div class="col-xs-4 pull-right">
-      <img src="/assets/images/instrumentos/{{ instrumento.image }}"
+      <img src="{{ "/assets/images/instrumentos/" | append: instrumento.image | prepend: site.baseurl | prepend: site.url }}"
            alt="{{ instrumento.title }}"
            title="{{ instrumento.title }}"
            class="img-responsive center-block"

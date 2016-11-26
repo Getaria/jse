@@ -3,11 +3,11 @@
   <div class="container">
     <div class="text-right">
       <ul class="header-links list-inline list-unstyled h4">
-        <li><span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="/{{ page.language }}/contact">contact</a></li>
+        <li><span class="glyphicon glyphicon-envelope">&nbsp;</span><a href={{ "/contact" | prepend: page.language | prepend: site.baseurl | prepend: site.url }}>contact</a></li>
         <li><i class="glyphicon glyphicon-flag"></i></li>
         {% for language in site.languages %}
         <li{% if language == page.language %} class="active"{% endif %}>
-          <a href="/{{ language }}"{% if language == page.language %} class="active"{% endif %}>{{ language }}</a>
+          <a href="{{ "/" |  append: language | prepend: site.baseurl | prepend: site.url }}"{% if language == page.language %} class="active"{% endif %}>{{ language }}</a>
         </li>
         {% endfor %}
       </ul>

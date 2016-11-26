@@ -5,7 +5,7 @@ layout: default
 <div class="row">
   {% if page.navegacion != nil %}
   <div class="breadcrumb">
-    <a href="{{ "/" | append: page.language | prepend: site.baseurl | prepend: site.url }}">{{ site.data.navegacion[page.language]["inicio"].name }} &raquo; {{ site.data.navegacion[page.language][page.navegacion].name | camelcase }} </a>
+    <a href="{{ "/" | append: page.language | prepend: site.baseurl | prepend: site.url }}">{{ site.data.navegacion[page.language]["inicio"].name }}</a> &raquo; {{ site.data.navegacion[page.language][page.navegacion].name | camelcase }}
   </div>
   {% endif %}
   <article>

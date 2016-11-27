@@ -6,6 +6,9 @@ image: foto-elkano.png
 language: es
 navegacion: jse
 orden: 0
+portada: true
+destacado: true
+orden-portada: 0
 ---
 
 No existe constancia documental del nacimiento de **Juan Sebastián Elkano**. No cabe duda de que era natural de **Getaria**, dato que reiteran tanto él como los que le trataron.

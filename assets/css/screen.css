@@ -199,12 +199,12 @@ main blockquote {
  * Portada
  */
 /* line 172, ../../scss/screen.scss */
-.view-portada header h1 {
+.portada header h1 {
   min-height: 2.5em;
 }
 
 /* line 176, ../../scss/screen.scss */
-.view-portada .row {
+.portada .row {
   margin-top: 0em;
   padding-top: 0em;
   padding-bottom: 2.25em;
@@ -212,7 +212,7 @@ main blockquote {
 }
 
 /* line 180, ../../scss/screen.scss */
-.view-portada .con-padding {
+.portada .con-padding {
   padding-left: 2em;
   padding-right: 2em;
 }

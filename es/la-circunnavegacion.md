@@ -1,9 +1,13 @@
 ---
 title: La circunnavegación
 layout: page
+image-teaser: barcos.png
 language: es
 navegacion: historia
 orden: 2
+portada: true
+destacado: true
+orden-portada: 1
 ---
 
 El 20 de septiembre la expedición zarpó de Sanlucar de Barrameda (Cádiz), con la intención de encontrar el paso marítimo hacia los territorios de las Indias orientales y buscar el camino que, recorriendo siempre mares castellanos según el tratado de Tordesillas), llegase a las islas de las Especias, lo que era la llamada ruta hacia el oeste, que ya había buscado Cristobal Colón.

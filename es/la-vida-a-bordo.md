@@ -6,6 +6,9 @@ image-teaser: barcos-2.png
 language: es
 navegacion: historia
 orden: 5
+portada: true
+destacado: false
+orden-portada: 4
 ---
 ## Organización
 

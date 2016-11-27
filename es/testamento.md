@@ -3,11 +3,16 @@ title: Testamento
 layout: page
 language: es
 image-banner: testamento.jpg
+image-teaser: manuscrito.png
 archivos:
  - titulo: Testamento de J.S. Elkano
    archivo: TESTAMENTO_ELKANO_COMPLETO_0.pdf
 navegacion: testimonios
 orden: 2
+portada: true
+destacado: false
+titulo-portada: Documentos y testimonios
+orden-portada: 2
 ---
 
 ## Transcripción del testamento

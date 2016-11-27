@@ -12,14 +12,11 @@ orden: 2
 ## El desembarco
 {:.isotope-item .tid-3 .clearfix}
 
-<div class="isotope-item tid-3 clearfix" markdown="1">
+  <div class="isotope-item tid-3 clearfix" markdown="1">
 
-Representación del desembarco de J.S. Elkano junto con los 17 supervivientes en la nao Victoria el 6 de Septiembre de 1522 en Sanlucar de Barrameda.
+  Representación del desembarco de J.S. Elkano junto con los 17 supervivientes en la nao Victoria el 6 de Septiembre de 1522 en Sanlucar de Barrameda.
 
-</div>
-</div>
-
-<div class="row isotope">
+  </div>
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
@@ -40,14 +37,11 @@ Representación del desembarco de J.S. Elkano junto con los 17 supervivientes en
 ## Los 5 continentes
 {:.isotope-item .tid-3 .clearfix}
 
-<div class="isotope-item tid-3 clearfix" markdown="1">
+  <div class="isotope-item tid-3 clearfix" markdown="1">
 
-En representación de los 5 continentes, 5 jóvenes recorren la plaza mayor y acompañan a J.S Elkano en la réplica de la nao Victoria.
+  En representación de los 5 continentes, 5 jóvenes recorren la plaza mayor y acompañan a J.S Elkano en la réplica de la nao Victoria.
 
-</div>
-</div>
-
-<div class="row isotope">
+  </div>
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
@@ -68,14 +62,11 @@ En representación de los 5 continentes, 5 jóvenes recorren la plaza mayor y ac
 ##  Honores
 {:.isotope-item .tid-3 .clearfix}
 
-<div class="isotope-item tid-3 clearfix" markdown="1">
+  <div class="isotope-item tid-3 clearfix" markdown="1">
 
-Representación de la llegada de Elkano a Valladolid para dar parte de su hazaña al Rey Carlos I de España. El rey le otorga 500 ducados y una esfera del mundo con la leyenda en latín: Primus circumdedisti me (<<El primero que me circundaste>>).
+  Representación de la llegada de Elkano a Valladolid para dar parte de su hazaña al Rey Carlos I de España. El rey le otorga 500 ducados y una esfera del mundo con la leyenda en latín: Primus circumdedisti me (<<El primero que me circundaste>>).
 
-</div>
-</div>
-
-<div class="row isotope">
+  </div>
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion

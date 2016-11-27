@@ -32,6 +32,7 @@ exclude:
 collections:
   slides:
   instrumentos:
+  fotos:
 
 languages:
   - es

@@ -25,6 +25,11 @@
           rel="stylesheet"
           integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
           crossorigin="anonymous">
+    <script src="{{ "/assets/js/imagesloaded/imagesloaded.pkgd.min.js" | absolute_url }}"></script>
+    <script src="{{ "/assets/js/isotope/dist/isotope.pkgd.min.js" | absolute_url }}"></script>
+    <script src="{{ "/assets/js/magnific-popup/dist/jquery.magnific-popup.min.js" | absolute_url }}"></script>
+    <link rel="stylesheet" href="{{ "/assets/js/magnific-popup/dist/magnific-popup.css" | absolute_url }}">
+    <script src="{{ "/assets/js/masonry/dist/masonry.pkgd.min.js" | absolute_url }}"></script>
   </head>
   <body>
     {% include header.html %}
@@ -32,5 +37,6 @@
       {{ content }}
     </main>
     {% include footer.html %}
+    <script src="{{ "/assets/js/footer.js" | absolute_url }}"></script>
   </body>
 </html>

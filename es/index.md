@@ -12,19 +12,19 @@ language: es
                                   | where: 'destacado', true
                                   | sort: 'orden-portada' %}
 {% for destacado in destacados %}
-<div class="col-md-6">
-<article>
-  <header class="text-center">
-    <h1 ><a href="{{ destacado.url | prepend: site.baseurl | prepend: site.url }}" title="{{ destacado.title }}">{{ destacado.title }}</a></h1>
-  </header>
-  <div class="row">
-    <div class="marco-foto">
-      <img class="img-responsive center-block"
-           src="{{ "/assets/images/pages/" | append: destacado.image-teaser | prepend: site.baseurl | prepend: site.url }}">
-    </div>
+  <div class="col-md-6">
+    <article>
+      <header class="text-center">
+        <h1 ><a href="{{ destacado.url | prepend: site.baseurl | prepend: site.url }}" title="{{ destacado.title }}">{{ destacado.title }}</a></h1>
+      </header>
+      <div class="row">
+        <div class="marco-foto">
+          <img class="img-responsive center-block"
+               src="{{ "/assets/images/pages/" | append: destacado.image-teaser | prepend: site.baseurl | prepend: site.url }}">
+        </div>
+      </div>
+    </article>
   </div>
-</article>
-</div>
 {% endfor %}
 </div>
 
@@ -34,20 +34,20 @@ language: es
                                   | where: 'destacado', false
                                   | sort: 'orden-portada' %}
 {% for destacado in destacados %}
-<div class="col-md-4 con-padding">
-<article>
-  <header class="text-center">
-    {% assign titulo = destacado.titulo-portada %}
-    {% if titulo == nil %}{% assign titulo = destacado.title %}{% endif %}
-    <h1 class="h2"><a href="{{ destacado.url | prepend: site.baseurl | prepend: site.url }}" title="{{ titulo }}">{{ titulo }}</a></h1>
-  </header>
-  <div class="row">
-    <div class="marco-foto">
-      <img class="img-responsive center-block"
-           src="{{ "/assets/images/pages/" | append: destacado.image-teaser | prepend: site.baseurl | prepend: site.url }}">
-    </div>
+  <div class="col-md-4 con-padding">
+    <article>
+      <header class="text-center">
+        {% assign titulo = destacado.titulo-portada %}
+        {% if titulo == nil %}{% assign titulo = destacado.title %}{% endif %}
+        <h1 class="h2"><a href="{{ destacado.url | prepend: site.baseurl | prepend: site.url }}" title="{{ titulo }}">{{ titulo }}</a></h1>
+      </header>
+      <div class="row">
+        <div class="marco-foto">
+          <img class="img-responsive center-block"
+               src="{{ "/assets/images/pages/" | append: destacado.image-teaser | prepend: site.baseurl | prepend: site.url }}">
+        </div>
+      </div>
+    </article>
   </div>
-</article>
-</div>
 {% endfor %}
 </div>

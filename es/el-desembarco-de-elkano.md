@@ -17,6 +17,8 @@ orden: 2
   Representación del desembarco de J.S. Elkano junto con los 17 supervivientes en la nao Victoria el 6 de Septiembre de 1522 en Sanlucar de Barrameda.
 
   </div>
+</div>
+<div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
@@ -25,7 +27,10 @@ orden: 2
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}" alt="{{ foto.title }}" class="img-responsive thumbnail">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+               title="{{ foto.descripcion }}"
+               alt="{{ foto.descripcion }}"
+               class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}
@@ -42,6 +47,8 @@ orden: 2
   En representación de los 5 continentes, 5 jóvenes recorren la plaza mayor y acompañan a J.S Elkano en la réplica de la nao Victoria.
 
   </div>
+  </div>
+  <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
@@ -50,7 +57,10 @@ orden: 2
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}" alt="{{ foto.title }}" class="img-responsive thumbnail">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+               title="{{ foto.descripcion }}"
+               alt="{{ foto.descripcion }}"
+               class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}
@@ -67,6 +77,8 @@ orden: 2
   Representación de la llegada de Elkano a Valladolid para dar parte de su hazaña al Rey Carlos I de España. El rey le otorga 500 ducados y una esfera del mundo con la leyenda en latín: Primus circumdedisti me (<<El primero que me circundaste>>).
 
   </div>
+</div>
+<div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
 
     {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
@@ -75,7 +87,10 @@ orden: 2
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}" alt="{{ foto.title }}" class="img-responsive thumbnail">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+               title="{{ foto.descripcion }}"
+               alt="{{ foto.descripcion }}"
+               class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}

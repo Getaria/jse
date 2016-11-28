@@ -15,7 +15,7 @@ galeria:
     - DSC_5901.jpg
     - DSC_5904.jpg
     - DSC_5911.jpg
-    - DSC_5912-jpg
+    - DSC_5912.jpg
   los 5 continentes:
     - DSC_6014.jpg
     - DSC_6029.jpg
@@ -50,7 +50,7 @@ galeria:
 <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
     {% for item in page.galeria['el desembarco'] %}
-    {% assign foto = site.fotos | where: 'image', item %}
+    {% assign foto = site.fotos | where: "image", item | first %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">
@@ -77,7 +77,7 @@ galeria:
 <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
     {% for item in page.galeria['los 5 continentes'] %}
-    {% assign foto = site.fotos | where: 'image', item %}
+    {% assign foto = site.fotos | where: "image", item | first %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">
@@ -104,7 +104,7 @@ galeria:
 <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
     {% for item in page.galeria['honores'] %}
-    {% assign foto = site.fotos | where: 'image', item %}
+    {% assign foto = site.fotos | where: "image", item | first %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
         <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">

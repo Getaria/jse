@@ -4,9 +4,38 @@ layout: page
 language: es
 navegacion: conmemoraciones
 orden: 2
+galeria:
+  el desembarco:
+    - DSC_5874.jpg
+    - DSC_5880.jpg
+    - DSC_5894.jpg
+    - DSC_5892.jpg
+    - DSC_5896.jpg
+    - DSC_5900.jpg
+    - DSC_5901.jpg
+    - DSC_5904.jpg
+    - DSC_5911.jpg
+    - DSC_5912-jpg
+  los 5 continentes:
+    - DSC_6014.jpg
+    - DSC_6029.jpg
+    - DSC_6049.jpg
+    - DSC_6082.jpg
+    - DSC_6122.jpg
+    - DSC_6180.jpg
+    - DSC_6208.jpg
+  honores:
+    - DSC_6137.jpg
+    - DSC_6138.jpg
+    - DSC_6139.jpg
+    - DSC_6142.jpg
+    - DSC_6152.jpg
+    - DSC_6201.jpg
+    - DSC_6265.jpg
+    - DSC_6276.jpg
+    - DSC_6280.jpg
+    - DSC_6305.jpg
 ---
-
-{% assign conmemoracion = page.title | slugify %}
 
 <div class="row isotope" markdown="1">
 ## El desembarco
@@ -20,21 +49,18 @@ orden: 2
 </div>
 <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
-
-    {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
-                                 | where: 'categoria', 'el desembarco' %}
-    {% for foto in fotos %}
+    {% for item in page.galeria['el desembarco'] %}
+    {% assign foto = site.fotos | where: 'image', item %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
-        <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+        <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: item | absolute_url }}"
                title="{{ foto.descripcion }}"
                alt="{{ foto.descripcion }}"
                class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}
-
   </ul>
 </div>
 
@@ -47,24 +73,21 @@ orden: 2
   En representación de los 5 continentes, 5 jóvenes recorren la plaza mayor y acompañan a J.S Elkano en la réplica de la nao Victoria.
 
   </div>
-  </div>
-  <div class="row isotope">
+</div>
+<div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
-
-    {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
-                                 | where: 'categoria', 'los 5 continentes' %}
-    {% for foto in fotos %}
+    {% for item in page.galeria['los 5 continentes'] %}
+    {% assign foto = site.fotos | where: 'image', item %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
-        <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+        <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: item | absolute_url }}"
                title="{{ foto.descripcion }}"
                alt="{{ foto.descripcion }}"
                class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}
-
   </ul>
 </div>
 
@@ -80,20 +103,17 @@ orden: 2
 </div>
 <div class="row isotope">
   <ul class="list-unstyled" data-sort-id="fotos-centenario">
-
-    {% assign fotos = site.fotos | where: 'conmemoracion', conmemoracion
-                                 | where: 'categoria', 'honores' %}
-    {% for foto in fotos %}
+    {% for item in page.galeria['honores'] %}
+    {% assign foto = site.fotos | where: 'image', item %}
 
       <div class="col-xs-12 col-sm-4 col-md-4 col-lg-4 isotope-item tid-3">
-        <a href="{{ "/assets/images/fotos/" | append: foto.image | absolute_url }}">
-          <img src="{{ "/assets/images/fotos/350x233/" | append: foto.image | absolute_url }}"
+        <a href="{{ "/assets/images/fotos/" | append: item | absolute_url }}">
+          <img src="{{ "/assets/images/fotos/350x233/" | append: item | absolute_url }}"
                title="{{ foto.descripcion }}"
                alt="{{ foto.descripcion }}"
                class="img-responsive thumbnail">
       </a>
       </div>
     {% endfor %}
-
   </ul>
 </div>

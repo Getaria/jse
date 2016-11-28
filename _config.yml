@@ -17,7 +17,7 @@ title: Elkano 500
 description: > # this means to ignore newlines until "baseurl:"
   Web conmemorativa del 5º centanario de la circunnavegación del globo por
   Juan Sebastián Elcano
-baseurl: "/jse" # the subpath of your site, e.g. /blog
+baseurl: "" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
 logo: getariako-elkano-logo.jpg
 

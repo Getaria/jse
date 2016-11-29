@@ -1,0 +1,66 @@
+---
+title: Contact
+layout: page
+language: fr
+---
+
+<form id="contact-site-form"
+      class="contact-form"
+      enctype="multipart/form-data"
+      action="https://paneles.gestiondecuenta.com/comprobar-formulario/"
+      method="POST" id ="formGenGdc"
+      onsubmit="return ValidarCaptcha();">
+  <div>
+    <div class="form-item form-type-textfield form-item-name">
+      <label for="nombre">Votre nom <span class="form-required" title="Ce champ est requis.">*</span></label>
+      <input type="text" id="nombre" name="nombre" value="" size="60" maxlength="255" class="form-text required" />
+    </div>
+
+    <div class="form-item form-type-textfield form-item-mail">
+      <label for="email">Votre adresse de courriel <span class="form-required" title="Ce champ est requis.">*</span></label>
+     <input type="text" id="email" name="email" value="" size="60" maxlength="255" class="form-text required" />
+    </div>
+
+    <div class="form-item form-type-textarea form-item-message">
+      <label for="mensaje">Message <span class="form-required" title="Ce champ est requis.">*</span></label>
+      <div class="form-textarea-wrapper resizable">
+       <textarea id="mensaje" name="mensaje" cols="60" rows="5" class="form-textarea required"></textarea>
+     </div>
+    </div>
+
+    <input type="hidden" value="" id="verificacionOculto" name="verificacionOculto"/>
+    <div id="muestraVerificacion"></div>
+    <input type="text" id="entradaVerificacion" name="entradaVerificacion" />
+
+    <input type="hidden" name="redirigir" class="" value="http://www.juansebastianelkano.com/fr/gracias.html" />
+    <input type="hidden" name="recipe" class="" value="juansebastianelkano@juansebastianelkano.com" />
+    <input type="hidden" name="asunto" class="" value="Envío formulario desde juansebastianelkano.com" />
+    <input type="hidden" name="required" class="" value="nombre;email;mensaje" />
+    <input type="hidden" name="dominio" class="" value="juansebastianelkano.com" />
+    <input type="hidden" name="idioma" class="" value="es" />
+
+    <div class="form-actions form-wrapper" id="edit-actions">
+      <input type="submit" id="enviar" name="enviar" value="Envoyer le message" class="form-submit" />
+    </div>
+
+  </div>
+</form>
+
+<script type="text/javascript">
+  var a = Math.ceil(Math.random() * 10);
+  var b = Math.ceil(Math.random() * 10);
+  var c = a + b;
+  function GenerarCaptcha(){
+    var hidden = document.getElementById("verificacionOculto");
+    var inputField = document.getElementById("entradaVerificacion");
+    var muestra = document.getElementById("muestraVerificacion");
+    muestra.innerHTML = a + " + " + b + " = ";
+    hidden.value = c ;
+  }
+  function ValidarCaptcha(){
+    var inputField = document.getElementById("entradaVerificacion");
+    if (inputField.value == c) return true;
+    else{inputField.style.color="red"; return false;}
+  }
+  GenerarCaptcha();
+</script>

@@ -3,7 +3,10 @@
   <div class="container">
     <div class="text-right">
       <ul class="header-links list-inline list-unstyled h4">
-        <li><span class="glyphicon glyphicon-envelope">&nbsp;</span><a href={{ "/contact" | prepend: page.language | prepend: site.baseurl | prepend: site.url }}>contact</a></li>
+        {% assign this = page.url %}
+        {% assign language = "" %}
+        {% if this == "/" %}{% assign language = "es/" %}{% endif %}
+        <li><span class="glyphicon glyphicon-envelope">&nbsp;</span><a href="{{ "contacto" | prepend: language | prepend: absolute_url }}">contact</a></li>
         <li><i class="glyphicon glyphicon-flag"></i></li>
         {% for language in site.languages %}
         <li{% if language == page.language %} class="active"{% endif %}>

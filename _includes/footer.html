@@ -39,11 +39,14 @@
     <div class="row">
       <div class="col-xs-12">
         <hr>
+        {% assign this = page.url %}
+        {% assign language = "" %}
+        {% if this == "/" %}{% assign language = "es/" %}{% endif %}
         <ul class="footer-menu list-inline list-unstyled text-center">
           <li><a href="#">Mapa Web</a></li>
           <li><a href="#">Aviso legal</a></li>
           <li><a href="#">Privacidad</a></li>
-          <li><a href="/es/contact">Contacto</a></li>
+          <li><a href="{{ "contacto" | prepend: language | prepend: absolute_url }}">Contacto</a></li>
         </ul>
       </div>
 
